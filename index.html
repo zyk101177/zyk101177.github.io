@@ -1,71 +1,110 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Yuke Zhang 张钰珂</title>
-    <!-- Add CSS links and other head elements here -->
+    <title>Yuke Zhang</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <h1>Your Name</h1>
+        <h1>Yuke Zhang 张钰珂</h1>
         <nav>
             <!-- Navigation Links -->
             <a href="#about">About</a>
+            <a href="#news">News</a>
             <a href="#publications">Publications</a>
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
-            <a href="#awards">Awards</a>
+            <!-- <a href="#education">Education</a> -->
+            <!-- <a href="#experience">Experience</a> -->
+            <!-- <a href="#awards">Awards</a> -->
             <a href="#services">Community Services</a>
-            <a href="#talks">Invited Talks</a>
+            <!-- <a href="#talks">Invited Talks</a> -->
+
         </nav>
     </header>
 
     <!-- About Section -->
     <section id="about">
-        <h2>About</h2>
-        <p>Your bio goes here.</p>
-        <!-- Add more content like photo, CV link, etc. -->
+        <div class="about-container">
+            <img src="me.jpg" alt="Your Name" class="about-img"/>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>I am a Ph.D candidate in ECE at University of Southern California, advised by Prof. Peter A. Beerel. </p>
+                <p>My research interests include ML security and privacy, and hardware security.</p>
+            </div>
+        </div>
     </section>
+    
+
+
+    <!-- News Section -->
+    <section id="news">
+        <h2>News</h2>
+        <ul>
+            <li>Oct. 2023 - I am selected as a USC MHI Scholar!</li>
+            <li>Jul. 2023 - Our paper RNA-ViT is accepeted at ICCAD 2023! </li>
+            <li>Jul. 2023 - Our paper SAL-ViT is accepeted at ICCV 2023! </li>
+            <li>Apr. 2023 - I am selected as DAC Young Fellow!</li>
+            <li>Apr. 2023 - I am selected as USC Annenberg Endowed Fellowship!</li>
+            <li>Mar. 2023 - Our paper C2PI is accepeted at DAC 2023!</li>
+            <!-- Add more news items as list items here -->
+        </ul>
+    </section>
+
 
     <!-- Publications Section -->
     <section id="publications">
-        <h2>Publications</h2>
-        <!-- List of publications -->
+        <h2>Selective Publications</h2>
+            <ol>
+                <li><strong>Y. Zhang</strong>*, D. Chen*, S. Kundu*, C. Cheng†, P. A. Beerel, "SAL-ViT: Towards Latency Efficient Private Inference on ViT using Selective Attention Search with a Learnable Softmax Approximation," <em>ICCV 2023</em>.</li>
+                <li>D. Chen*, <strong>Y. Zhang</strong>*, S. Kundu*, C. Cheng†, P. A. Beerel, "RNA-ViT: Reduced-Dimension Approximate Normalized Attention Vision Transformers for Latency Efficient Private Inference," accepted at <em>ICCAD 2023</em>.</li>
+                <li><strong>Y. Zhang</strong>, D. Chen, S. Kundu, H. Liu†, R. Peng†, P. A. Beerel, "C2PI: An Efficient Crypto-Clear Two-Party Neural Network Private Inference," accepted at <em>DAC 2023</em>.</li>
+                <li>S. Kundu, <strong>Y. Zhang</strong>, D. Chen, P. A. Beerel, "Making Models Shallow Again: Jointly Learning to Reduce Non-Linearity and Depth for Latency-Efficient Private Inference," accepted at <em>CVPR workshop (ECV) 2023</em>.</li>
+                <li>Y. Hu, <strong>Y. Zhang</strong>, K. Yang, D. Chen, P. A. Beerel, P. Nuzzo, "On the Security of Sequential Logic Locking Against Oracle-Guided Attacks," accepted at <em>TCAD-I</em>.</li>
+                <!-- More items here -->
+                <li><strong>Y. Zhang</strong>, K. El-Sankary, "Orthogonal Polynomials Nonlinearity Compensation for a digital VCO-based ADC," <em>Electronics Letters, vol 52, no.11, pp 915-917, May 2016</em>.</li>
+            </ol>
+        </section>
+        
     </section>
+
 
     <!-- Education Section -->
-    <section id="education">
-        <h2>Education</h2>
+    <!-- <section id="education"> -->
+        <!-- <h2>Education</h2> -->
         <!-- Education details -->
-    </section>
+    <!-- </section>  -->
 
     <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
+    <!-- <section id="experience"> -->
+        <!-- <h2>Experience</h2> -->
         <!-- Professional experience details -->
-    </section>
+    <!-- </section> -->
 
     <!-- Awards Section -->
-    <section id="awards">
-        <h2>Awards</h2>
+    <!-- <section id="awards"> -->
+        <!-- <h2>Awards</h2> -->
         <!-- List of awards -->
-    </section>
+    <!-- </section> -->
 
     <!-- Community Services Section -->
     <section id="services">
         <h2>Community Services</h2>
-        <!-- Community service details -->
+        <ul>
+            <li>Conference reviewer - ICLR 2024, NeurIPS 2023, IJCNN 2023, ASYNC 2021, CICC 2021</li>
+            <li>Journal reviewer - TCAS-I, Analog Integrated Circuits and Signal Processing </li>
+            <!-- Add more news items as list items here -->
+        </ul>
     </section>
 
     <!-- Invited Talks Section -->
-    <section id="talks">
-        <h2>Invited Talks</h2>
+    <!-- <section id="talks"> -->
+        <!-- <h2>Invited Talks</h2> -->
         <!-- List of invited talks -->
-    </section>
+    <!-- </section> -->
 
     <!-- Footer -->
     <footer>
-        <p>&copy; [Current Year] Your Name. All rights reserved.</p>
+        <p>&copy; 2023 Yuke Zhang. All rights reserved.</p>
     </footer>
 
 </body>
