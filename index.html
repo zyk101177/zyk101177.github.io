@@ -4,6 +4,29 @@
     <title>Yuke Zhang</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWec7b6v3/0ezzjK8Q3xMVv8S+R0mI6b6RJ1l5Zm/3gkRjSGIO0w7R1zHlaA" crossorigin="anonymous">
+    <style>
+        .prof-link {
+            color: rgb(229, 149, 58);
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+
+    <style>
+        .pub-link {
+            color: rgb(109, 203, 108);
+            /* font-weight: bold; */
+            text-decoration: none;
+        }
+    </style>
+
+    <style>
+        .news-highlight {
+            color: hwb(213 21% 37%);
+            font-weight: bold;
+        }
+    </style>
+
 </head>
 <body>
     <!-- Header -->
@@ -16,21 +39,33 @@
             <a href="#publications">Publications</a>
             <!-- <a href="#education">Education</a> -->
             <!-- <a href="#experience">Experience</a> -->
-            <!-- <a href="#awards">Awards</a> -->
+            <a href="#honors">Honors</a>
             <a href="#services">Community Services</a>
-            <a href="#honors">Invited Talks</a>
-
         </nav>
     </header>
 
     <!-- About Section -->
     <section id="about">
+        <h2>About Me</h2>
         <div class="about-container">
-            <img src="me.jpg" alt="Your Name" class="about-img"/>
+            <img src="me.jpg" alt="Yuke" class="about-img"/>
             <div class="about-text">
-                <h2>About Me</h2>
-                <p>I am a Ph.D. candidate in ECE at the University of Southern California, advised by Prof. Peter A. Beerel. </p>
-                <p>My research interests include ML security and privacy, and hardware security.</p>
+                
+                <p>I am a Ph.D. candidate in ECE at the University of Southern California, and I am fortunate to be advised by <a href="https://sites.usc.edu/eessc/" class="prof-link">Prof. Peter A. Beerel</a>. My full CV can be found <a href="CV_YukeZhang.pdf" target="_blank">here</a> (updated: Nov. 2023).</p>
+                My research interests include 
+                <ul> 
+                    <li><strong>ML security and privacy:</strong> <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Zhang_SAL-ViT_Towards_Latency_Efficient_Private_Inference_on_ViT_using_Selective_ICCV_2023_paper.pdf" class="pub-link">SAL-ViT</a>,
+                                                 <a href="https://arxiv.org/pdf/2304.13266.pdf" class="pub-link">C2PI,</a> 
+                                                 <a href="https://www.researchgate.net/publication/376109189_RNA-ViT_Reduced-Dimension_Approximate_Normalized_Attention_Vision_Transformers_for_Latency_Efficient_Private_Inference" class="pub-link">RNA-ViT</a> 
+                                                </li>
+
+                    <li><strong>Hardware security:</strong> <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9774649" class="pub-link">TriLock,</a>
+                                            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9702267" class="pub-link">Fun-SAT</a>
+                                            </li>
+
+
+                </ul>
+                My research vision aims to provide a comprehensive and vertically integrated suite of solutions for data privacy—from the algorithmic core to the silicon substrate—ensuring that privacy is not just an add-on feature but a foundational principle of modern ML systems.
                 <p>
                     <a href="https://scholar.google.com/citations?user=CJ5iMiwAAAAJ&hl=en" target="_blank">Google Scholar</a> | 
                     <a href="https://www.linkedin.com/in/yuke-zhang-84791383/" target="_blank">LinkedIn</a> | 
@@ -48,12 +83,12 @@
     <section id="news">
         <h2>News</h2>
         <ul>
-            <li>Oct. 2023 - I am selected as a USC MHI Scholar!</li>
-            <li>Jul. 2023 - Our paper RNA-ViT is accepeted at ICCAD 2023! </li>
-            <li>Jul. 2023 - Our paper SAL-ViT is accepeted at ICCV 2023! </li>
-            <li>Apr. 2023 - I am selected as DAC Young Fellow!</li>
-            <li>Apr. 2023 - I am selected as USC Annenberg Endowed Fellowship!</li>
-            <li>Mar. 2023 - Our paper C2PI is accepeted at DAC 2023!</li>
+            <li>Oct. 2023 - I am selected as a <a class="news-highlight"> USC MHI Scholar! </a></li>
+            <li>Jul. 2023 - Our paper RNA-ViT is accepeted at <a class="news-highlight"> ICCAD 2023!</a> </li>
+            <li>Jul. 2023 - Our paper SAL-ViT is accepeted at <a class="news-highlight"> ICCV 2023! </a> </li>
+            <li>Apr. 2023 - I am selected as a <a class="news-highlight"> DAC Young Fellow! </a></li>
+            <li>Apr. 2023 - I am selected to receive the <a class="news-highlight">  USC Annenberg Endowed Fellowship! </a> </li>
+            <li>Mar. 2023 - Our paper C2PI is accepeted at <a class="news-highlight">  DAC 2023! </a></li>
             <!-- Add more news items as list items here -->
         </ul>
     </section>
@@ -62,14 +97,47 @@
     <!-- Publications Section -->
     <section id="publications">
         <h2>Selective Publications (<a href="https://scholar.google.com/citations?user=CJ5iMiwAAAAJ&hl=en" target="_blank">Full list</a>) </h2>
+        <p>  (*= Equal contribution) </p>
             <ol>
-                <li><strong>Y. Zhang</strong>*, D. Chen*, S. Kundu*, C. Cheng†, P. A. Beerel, "SAL-ViT: Towards Latency Efficient Private Inference on ViT using Selective Attention Search with a Learnable Softmax Approximation," <em>ICCV 2023</em>.</li>
-                <li>D. Chen*, <strong>Y. Zhang</strong>*, S. Kundu*, C. Cheng†, P. A. Beerel, "RNA-ViT: Reduced-Dimension Approximate Normalized Attention Vision Transformers for Latency Efficient Private Inference," accepted at <em>ICCAD 2023</em>.</li>
-                <li><strong>Y. Zhang</strong>, D. Chen, S. Kundu, H. Liu†, R. Peng†, P. A. Beerel, "C2PI: An Efficient Crypto-Clear Two-Party Neural Network Private Inference," accepted at <em>DAC 2023</em>.</li>
-                <li>S. Kundu, <strong>Y. Zhang</strong>, D. Chen, P. A. Beerel, "Making Models Shallow Again: Jointly Learning to Reduce Non-Linearity and Depth for Latency-Efficient Private Inference," accepted at <em>CVPR workshop (ECV) 2023</em>.</li>
-                <li>Y. Hu, <strong>Y. Zhang</strong>, K. Yang, D. Chen, P. A. Beerel, P. Nuzzo, "On the Security of Sequential Logic Locking Against Oracle-Guided Attacks," accepted at <em>TCAD-I</em>.</li>
+                <li><strong>Y. Zhang</strong>*, D. Chen*, S. Kundu*, C. Cheng, P. A. Beerel, "SAL-ViT: Towards Latency Efficient Private Inference on ViT using Selective Attention Search with a Learnable Softmax Approximation," <em class="news-highlight">ICCV 2023</em>.
+                    <br><a href="" target="_blank">Paper</a> | 
+                    <a href="" target="_blank">Code</a> | 
+                    <a href="">Vedio</a>
+                </li>
+
+                <li>D. Chen*, <strong>Y. Zhang</strong>*, S. Kundu*, C. Cheng, P. A. Beerel, "RNA-ViT: Reduced-Dimension Approximate Normalized Attention Vision Transformers for Latency Efficient Private Inference," accepted at <em class = "news-highlight">ICCAD 2023</em>.
+                    <br><a href="" target="_blank">Paper</a> | 
+                    <a href="">Vedio</a>
+                </li>
+
+                <li><strong>Y. Zhang</strong>, D. Chen, S. Kundu, H. Liu, R. Peng, P. A. Beerel, "C2PI: An Efficient Crypto-Clear Two-Party Neural Network Private Inference," accepted at <em class="news-highlight">DAC 2023</em>.
+                    <br><a href="" target="_blank">Paper</a> | 
+                    <a href="" target="_blank">Code</a> | 
+                    <a href="">Vedio</a>
+                </li>
+                
+                <li><strong>Y. Zhang</strong>*, Y. Hu*, P. Nuzzo, P. A. Beerel, "TriLock: IC Protection with Tunable Corruptibility and Resilience to SAT and Removal Attacks," <em class="news-highlight">DATE 2022</em>.
+                    <br><a href="" target="_blank">Paper</a> | 
+                    <a href="" target="_blank">Code</a> | 
+                    <a href="">Vedio</a></li>
+                <li>Y. Hu*, <strong>Y. Zhang</strong>*, K. Yang, D. Chen, P. A. Beerel, P. Nuzzo, "Fun-SAT: Functional Corruptibility-Guided SAT-Based Attack on Sequential Logic Encryption," <em class="news-highlight">HOST, 2021</em>.
+                    <br><a href="" target="_blank">Paper</a> | 
+                    <a href="" target="_blank">Code</a>
+                </li>
+
+                <li><strong>Y. Zhang</strong>, D. El-Damak, "A Reconfigurable Passive Switched-Capacitor Multiply-and-Accumulate Unit for Approximate Computing," <em class="news-highlight">MWSCAS, Aug. 2020.</em>
+                    <br><a href="" target="_blank">Paper</a></li>
+                <li><strong>Y. Zhang</strong>, C. Y. Ko, C. Chen, K. Bastelier, N. Wong, "Sparse Tensor Network System Identification for Nonlinear Circuit Macromodeling," <em class="news-highlight"> 2018 IEEE 14th International Conference on Solid-State and Integrated Circuit Technology. (Invited)</em>
+                    <br><a href="" target="_blank">Paper</a></li>
+                <li><strong>Y. Zhang</strong>, K. El-Sankary, J. Zhou, "A Blind Digital Background Calibration for VCO-based ADC," <em class="news-highlight">Analog Integrated Circuits and Signal Processing, vol 97, no.2, pp.387-394, Nov. 2018.</em>
+                    <br><a href="" target="_blank">Paper</a></li>
+                <li><strong>Y. Zhang</strong>, K. El-Sankary, "Offset-Injection Digital Background Calibration for VCO-based ADC," <em class="news-highlight">Analog Integrated Circuits and Signal Processing, vol. 92, no.3, pp.501-506, Jul. 2017.</em>
+                    <br><a href="" target="_blank">Paper</a></li>
+
+                
                 <!-- More items here -->
-                <li><strong>Y. Zhang</strong>, K. El-Sankary, "Orthogonal Polynomials Nonlinearity Compensation for a digital VCO-based ADC," <em>Electronics Letters, vol 52, no.11, pp 915-917, May 2016</em>.</li>
+                <li><strong>Y. Zhang</strong>, K. El-Sankary, "Orthogonal Polynomials Nonlinearity Compensation for a digital VCO-based ADC," <em class="news-highlight">Electronics Letters, vol 52, no.11, pp 915-917, May 2016</em>.
+                    <br><a href="" target="_blank">Paper</a></li>
             </ol>
         </section>
         
@@ -94,6 +162,29 @@
         <!-- List of awards -->
     <!-- </section> -->
 
+
+
+    <!-- Invited Talks Section -->
+    <!-- <section id="talks"> -->
+        <!-- <h2>Invited Talks</h2> -->
+        <!-- List of invited talks -->
+    <!-- </section> -->
+
+
+    <section id="honors">
+        <h2>Selective Honors</h2>
+        <ul>
+            <li>2023 USC MHI Scholar </li>
+            <li>2023 DAC Young Fellow </li>
+            <li>2023-2024 USC Annenberg Endowed Fellowship </li>
+            <li>2022 Qualcomm Innovation Fellowship Finalist </li>
+            <li>2021-2022 WiSE Qualcomm Top-Off Award </li>
+            <li>2020 SSCS WiC Rising Star </li>
+            <li>Student Travel Grant: DAC 2023, HOST 2022, ISSCC 2020, CICC 2020 </li>
+            <!-- Add more news items as list items here -->
+        </ul>
+    </section>
+
     <!-- Community Services Section -->
     <section id="services">
         <h2>Community Services</h2>
@@ -104,11 +195,16 @@
         </ul>
     </section>
 
-    <!-- Invited Talks Section -->
-    <!-- <section id="talks"> -->
-        <!-- <h2>Invited Talks</h2> -->
-        <!-- List of invited talks -->
-    <!-- </section> -->
+
+    <section id="explorer">
+        <h2>Community Services</h2>
+        <ul>
+            <li>Conference reviewer - ICLR 2024, NeurIPS 2023, IJCNN 2023, ASYNC 2021, CICC 2021</li>
+            <li>Journal reviewer - TCAS-I, Analog Integrated Circuits and Signal Processing </li>
+            <!-- Add more news items as list items here -->
+        </ul>
+    </section>
+
 
     <!-- Footer -->
     <footer>
